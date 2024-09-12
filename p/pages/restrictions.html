@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietary Restrictions - Smart Grocery Meal Planner</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="form-content">
+                <h2>Set Your Dietary Preferences</h2>
+                <p>Select your dietary restrictions and preferences to get personalized meal plans.</p>
+                <form>
+                    <label for="diet-type">Diet Type:</label>
+                    <select id="diet-type" name="diet-type">
+                        <option value="none">None</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="pescatarian">Pescatarian</option>
+                        <option value="gluten-free">Gluten-Free</option>
+                        <option value="keto">Keto</option>
+                        <option value="paleo">Paleo</option>
+                        <option value="low-carb">Low-Carb</option>
+                        <option value="low-fat">Low-Fat</option>
+                    </select>
+
+                    <label for="allergies">Allergies:</label>
+                    <input type="text" id="allergies" name="allergies" placeholder="e.g., peanuts, shellfish">
+
+                    <label for="calories">Daily Caloric Intake:</label>
+                    <input type="number" id="calories" name="calories" placeholder="e.g., 2000">
+
+                    <button type="submit" class="save-btn">Save Preferences</button>
+                </form>
+            </div>
+        </div>
+        <div class="illustration">
+            <img src="../assets/images/illustration.png" alt="Illustration">
+        </div>
+    </div>
+</body>
+</html>

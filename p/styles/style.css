@@ -1,0 +1,698 @@
+/* General body and font settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.description{
+    color: #19db08;
+    padding-left: 20px;
+    font-size: large;
+}
+
+/* style.css file*/
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+ h1 {
+    color: #19db08;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 50px 30px;
+    border: 1.5px solid #b2b2b2;
+    border-radius: 0.25em;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+#my-qr-reader {
+    padding: 20px !important;
+    border: 1.5px solid #b2b2b2 !important;
+    border-radius: 8px;
+}
+
+#my-qr-reader img[alt="Info icon"] {
+    display: none;
+}
+
+#my-qr-reader img[alt="Camera based scan"] {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #b2b2b2;
+    outline: none;
+    border-radius: 0.25em;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: #008000ad;
+    transition: 0.3s background-color;
+}
+
+button:hover {
+    background-color: #008000;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+    text-decoration: none !important;
+    color: #1d9bf0;
+}
+
+video {
+    width: 100% !important;
+    border: 1px solid #b2b2b2 !important;
+    border-radius: 0.25em;
+}
+
+/* Navigation bar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #2ecc71; /* Green background for navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px; /* Logo height */
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #27ae60; /* Darker green on hover */
+}
+
+/* Mobile menu styling */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #2ecc71;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Menu toggle */
+.mobile-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Parallax effect */
+.parallax {
+    background-image: url('../assets/images/header.jpg'); /* Update with your desired parallax image */
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Content section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.meal-form, .grocery-form, .expiration-form, .ai-form {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Mobile menu styling */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #2ecc71;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Menu toggle */
+.mobile-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Parallax effect */
+.parallax {
+    background-image: url('../assets/images/header.jpg'); /* Update with your desired parallax image */
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Content section styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.meal-form, .grocery-form, .expiration-form, .ai-form {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile menu styling */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #2ecc71;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Menu toggle */
+.mobile-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #3e8e41;
+}
+
+.meal-form, .grocery-form, .expiration-form, .ai-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="text"], input[type="date"], select {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button img.icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #3e8e41;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for the entire page */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f5f1; /* Light green background */
+}
+
+/* Form container */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Form content */
+.form-content {
+    text-align: center;
+}
+
+/* Form input fields */
+.form-content input[type="email"],
+.form-content input[type="password"],
+.form-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Google Sign In Button */
+.google-sign-in {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Sign In and Sign Up Button */
+.sign-in-btn, .sign-up-btn, .submit-btn {
+    background-color: #2ecc71; /* Green color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Terms and conditions text */
+.terms {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Illustration container */
+.illustration {
+    display: none; /* Hide on mobile */
+}
+
+@media(min-width: 768px) {
+    .container {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .illustration {
+        display: block;
+        max-width: 50%;
+    }
+
+    .illustration img {
+        max-width: 100%;
+    }
+}
+/* ...existing styles... */
+
+/* Forgot Password Link */
+.forgot-password {
+    display: block;
+    margin-bottom: 15px;
+    color: #2ecc71; /* Green color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Reset Password Button */
+.reset-password-btn {
+    background-color: #2ecc71; /* Green color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Back to Login link */
+.back-to-login {
+    margin-top: 20px;
+}
+
+.back-to-login a {
+    color: #2ecc71; /* Green color */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-to-login a:hover {
+    text-decoration: underline;
+}
+
+/* ...existing styles... */
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Light grey background for elegance */
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-content h2 {
+    font-size: 24px;
+    color: #2c3e50; /* Darker text for a more serious tone */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-content p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #34495e;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ecf0f1;
+}
+
+input::placeholder {
+    color: #95a5a6;
+}
+
+.save-btn {
+    background-color: #2ecc71; /* Green for action buttons */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Illustration side */
+.illustration {
+    display: none; /* Hide illustration on small screens */
+}
+
+.illustration img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .illustration {
+        display: block;
+    }
+
+    .form-container {
+        width: 400px;
+    }
+}
+
+

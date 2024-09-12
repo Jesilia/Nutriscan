@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScan</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/header.jpg" alt="Logo">
+            </div>
+            <h1>NutriScan </h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/signup.html">Sign Up</a></li>
+                <li><a href="pages/login.html">Log In</a></li>
+                <li><a href="pages/restrictions.html">Dietary Restrictions</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+        </nav>
+    </header>
+
+
+    <!-- Parallax Section -->
+    <section class="parallax"></section>
+    <h1>Scan QR Codes</h1>
+    <div class="container">
+        
+        <div class="section">
+            <div id="my-qr-reader">
+            </div>
+        </div>
+        <div class="description">
+            NutriScan: Just scan your food and instantly see its grade—Good, Neutral, or Bad.<br>
+             Uncover hidden sugars, preservatives, and more, <br>
+            making healthy choices simple and easy on the go. Scan. Grade. Enjoy!
+        </div>
+    </div>
+    <script
+        src="https://unpkg.com/html5-qrcode">
+    </script>
+    <script src="scripts/script.js"></script>
+
+    <section id="meal-planner">
+        <h2>Meal Planner</h2>
+        <div class="meal-form">
+            <input type="text" id="meal-name" placeholder="Meal Name">
+            <input type="text" id="ingredients" placeholder="Ingredients (comma-separated)">
+            <select id="meal-day">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+            <button onclick="addMeal()">
+                <img src="assets/images/add-meal-icon.png" alt="Add Meal Icon" class="icon"> Add Meal
+            </button>
+        </div>
+        <ul id="meal-list"></ul>
+    </section>
+
+    <section id="grocery-list">
+        <h2>Grocery List</h2>
+        <div class="grocery-form">
+            <input type="text" id="existing-ingredients" placeholder="Existing Ingredients">
+            <button onclick="updateGroceryList()">
+                <img src="assets/images/update-icon.png" alt="Update Icon" class="icon"> Update Grocery List
+            </button>
+        </div>
+        <ul id="grocery-list-items"></ul>
+    </section>
+
+    <section id="expiration-tracker">
+        <h2>Expiration Tracker</h2>
+        <div class="expiration-form">
+            <input type="text" id="exp-ingredient" placeholder="Ingredient">
+            <input type="date" id="expiration-date">
+            <button onclick="addExpiration()">
+                <img src="assets/images/expiration-icon.png" alt="Expiration Icon" class="icon"> Add Expiration
+            </button>
+        </div>
+        <ul id="expiration-list"></ul>
+    </section>
+
+    <section id="ai-assistant">
+        <h2>AI Assistant</h2>
+        <div class="ai-form">
+            <input type="text" id="user-input" placeholder="Ask me anything!">
+            <button onclick="askAI()">
+                <img src="assets/images/ai-icon.png" alt="AI Icon" class="icon"> Ask AI
+            </button>
+        </div>
+        <div id="ai-response"></div>
+    </section>
+
+    <section id="weekly-plan">
+        <h2>Weekly Meal Plan</h2>
+        <ul id="weekly-meal-plan"></ul>
+    </section>
+
+    <footer>
+        <p>© 2024 Smart Grocery List & Meal Planner</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
